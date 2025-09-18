@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="section-heading">Zhamsat Almat</h1>
+    <h2 class="section-heading">WEB Technologies 1 (Front End) | Daniyar Amantayev</h2>
 
-        <link rel="stylesheet" href="style.css">
-        <title>
-            My First Webpage
-        </title>
-        </head>
+    <p class="paragraph-text quote">About me: student, 19 years old, live in Astana</p>
 
-        <body>
-            <h1>Zhamsat Almat</h1>
-            <h2>WEB Technologies 1 (Front End) | Daniyar Amantayev</h2>
-            <p>About me:student, 19 years old, live in Astana</p>
-             <ol>
-                <li>hockey</li> 
-                <li>tennis</li>
-                <li>workout</li>
-                <li>running</li>
-             </ol>
-             <nav id="links">
-             <ul>
-                <li><a href=https://translate.yandex.ru/?source_lang=ru&target_lang=en>translate.yandex</a></li>
-                <li><a href=https://www.instagram.com/>instagram</a></li>
-                <li><a href=https://youtube.com/>Youtube</a></li>
-             </ul>
-            </nav>
-             <img id="Photo" src="photoaitu.jpg" width="200" alt="My photo">
-            <h1></h1>
-             <button>Click Me</button>
-             <h1>My table</h1>
-             <table border="1">
-                <tr>
-                    <th>Subject</th>
-                    <th>Day</th>
-                    <th>time</th>
-                </tr>
-                <tr>
-                    <td>kazakh language</td>
-                    <td>Monday</td>
-                    <td>16:00</td>
-                </tr>
-                <tr>
-                    <td>introduction to finance</td>
-                    <td>Tuesday</td>
-                    <td>19:00</td>
-                </tr>
-             </table>
-             <h1>Me in september:very excited😃,💖,ready to get knowledge💡</h1>
-             <input type="text" placeholder="Name">
-             <input type="text" placeholder="Email">
-             <input type="color" placeholder="Favorite Color">
-             <button id="buttonlast">Submit </button>
-        </body>
+    <h3 class="section-heading">My Hobbies</h3>
+    <ol class="hobby-list">
+        <li>Hockey</li>
+        <li>Tennis</li>
+        <li>Workout</li>
+        <li>Running</li>
+    </ol>
+
+    <nav id="main-navigation">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="https://translate.yandex.ru/?source_lang=ru&target_lang=en" target="_blank">Yandex Translate</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://soundcloud.com/discover" target="_blank">Soundcloud</a></li>
+        </ul>
+    </nav>
+
+    <img id="main-image" src="photoaitu.jpg" alt="My photo">
+
+    <button class="button-style">Click Me</button>
+
+    <h2 class="section-heading">My Table</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td>Kazakh Language</td>
+                <td>Monday</td>
+                <td>16:00</td>
+            </tr>
+            <tr>
+                <td>Introduction to Finance</td>
+                <td>Tuesday</td>
+                <td>19:00</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 class="section-heading">Me in September</h2>
+    <p class="paragraph-text">Very excited 😃, 💖, ready to get knowledge 💡</p>
+
+    <form>
+        <input type="text" class="form-input" placeholder="Name">
+        <input type="email" class="form-input" placeholder="Email">
+        <input type="color" class="form-input">
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+</body>
 </html>

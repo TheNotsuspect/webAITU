@@ -1,65 +1,153 @@
-body{
-/* style */
-font-family: Arial, sans-serif;
-/* background */
-background-color: lightblue;
-/* text*/
-color: #333;
-/*otstup*/
-margin: 9;
-padding: 0;
+/* === Styles === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-h1, h2, h3 {
-    text-align : center;
-    color: #29562a;
+
+/* Titles */
+.section-heading {
+    text-align: center;
+    color: #2e5a31;
+    font-weight: bold;
 }
-p{
+
+/* Text */
+.paragraph-text {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Navigation */
+#main-navigation {
+    background-color: #2e5a31;
+    padding: 10px 0;
     text-align: center;
 }
-ol, ul {
-    width: 50px;
-    margin: 5px;
-    padding: 5px;
+
+#main-navigation .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main-navigation .nav-item {
+    display: inline-block;
     margin: 0 15px;
 }
 
-#links{
-    a{
-    color: blue;
+#main-navigation .nav-link {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
 }
-    a:hover {
+
+#main-navigation .nav-link:hover {
+    background-color: #1e3d21;
+    color: #ffcc00;
     text-decoration: underline;
-    color:red;
-    }
 }
-table{
+
+/* Lists */
+.hobby-list {
     margin: 20px auto;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 10px;
-    text-align: left;
-}
-#Photo{
-    margin: 0 auto;
     width: 200px;
+    padding: 10px;
 }
-button{
-    padding: 8px 16px;
+
+/* Citation */
+.quote::before {
+  content: "“";
+  color: rgb(21, 123, 106);
+  font-size: 24px;
+}
+.quote::after {
+  content: "”";
+  color: rgb(21, 123, 106);
+  font-size: 24px;
+}
+
+/* Tables */
+.table-container {
+    margin: 20px auto;
+    width: 60%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #2e5a31;
+    color: white;
+}
+
+/* Myphoto */
+#main-image {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+#main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.button-style {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
     background-color: #b7beb7;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
-color{
-    cursor: pointer;
+
+.button-style:hover {
+    background-color: #8d9a8d;
 }
-input{
+
+/* Forms */
+.form-input {
     display: block;
     margin: 10px auto;
-    padding: 6px;
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
-#buttonlast{
+
+.submit-btn {
     display: block;
     margin: 20px auto;
-    padding: auto;
+    padding: 10px 20px;
+    background-color: #2e5a31;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1e3d21;
 }
