@@ -1,65 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My First Webpage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Zhamsat Almat Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="section-heading">Zhamsat Almat</h1>
-    <h2 class="section-heading">WEB Technologies 1 (Front End) | Daniyar Amantayev</h2>
 
-    <p class="paragraph-text quote">About me: student, 19 years old, live in Astana</p>
-
-    <h3 class="section-heading">My Hobbies</h3>
-    <ol class="hobby-list">
-        <li>Hockey</li>
-        <li>Tennis</li>
-        <li>Workout</li>
-        <li>Running</li>
-    </ol>
-
-    <nav id="main-navigation">
-        <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="https://translate.yandex.ru/?source_lang=ru&target_lang=en" target="_blank">Yandex Translate</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/" target="_blank">Instagram</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://soundcloud.com/discover" target="_blank">Soundcloud</a></li>
-        </ul>
+  <!--Navigation flexbox-->
+  <header class="main-header">
+    <div class="logo">Zhamsat Almat</div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="https://translate.yandex.ru/" target="_blank">Yandex Translate</a></li>
+        <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+        <li><a href="https://soundcloud.com/discover" target="_blank">Soundcloud</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <img id="main-image" src="photoaitu.jpg" alt="My photo">
-
-    <button class="button-style">Click Me</button>
-
-    <h2 class="section-heading">My Table</h2>
-    <div class="table-container">
-        <table>
-            <tr>
-                <th>Subject</th>
-                <th>Day</th>
-                <th>Time</th>
-            </tr>
-            <tr>
-                <td>Kazakh Language</td>
-                <td>Monday</td>
-                <td>16:00</td>
-            </tr>
-            <tr>
-                <td>Introduction to Finance</td>
-                <td>Tuesday</td>
-                <td>19:00</td>
-            </tr>
-        </table>
+  <!--Card rowflexbox-->
+  <section class="card-row">
+    <div class="card">
+      <img src="photoaitutennis.jpg" alt="Tennis">
+      <h3>Me</h3>
+      <p>Me playing table-tennis in expo</p>
+      <button>Read More</button>
     </div>
+    <div class="card">
+      <img src="photoaitulibrary.jpg" alt="library">
+      <h3>Me and friends</h3>
+      <p>Me with friends in library</p>
+      <button>Read More</button>
+    </div>
+    <div class="card">
+      <img src="photoaituwinter.jpg" alt="winter">
+      <h3>Winter</h3>
+      <p>It was really cold</p>
+      <button>Read More</button>
+    </div>
+  </section>
 
-    <h2 class="section-heading">Me in September</h2>
-    <p class="paragraph-text">Very excited 😃, 💖, ready to get knowledge 💡</p>
+  <!--Grid layout areas-->
+  <div class="grid-layout">
+    <header class="grid-header">Grid Header</header>
+    <aside class="grid-sidebar">Sidebar</aside>
+    <main class="grid-main">Main Content</main>
+    <footer class="grid-footer">Grid Footer</footer>
+  </div>
 
-    <form>
-        <input type="text" class="form-input" placeholder="Name">
-        <input type="email" class="form-input" placeholder="Email">
-        <input type="color" class="form-input">
-        <button type="submit" class="submit-btn">Submit</button>
-    </form>
+  <!--Image gallery grid-->
+  <section class="gallery">
+    <img src="photoaituboardgame.jpg" alt="boardgame">
+    <img src="photoaitumega.jpg" alt="">
+    <img src="photoaitulibrary2.jpg" alt="">
+    <img src="photoaitucanteen.jpg" alt="">
+    <img src="photoaituos.jpg" alt="">
+    <img src="photoaitulibrary3.jpg" alt="">
+    <img src="photoaitu" alt="">
+    <img src="photoaitu" alt="">
+    <img src="photoaitudormitory" alt="">
+  </section>
+
+  <!--Portfolio page flexbox and grid-->
+  <div class="portfolio">
+    <header class="portfolio-header">
+      <div class="logo">Portfolio</div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="portfolio-main">
+      <!--Projects section-->
+      <section class="projects">
+        <div class="project-card">
+          <h3>Project 1</h3>
+          <p>Short description of project.</p>
+          <button>See More</button>
+        </div>
+        <div class="project-card">
+          <h3>Project 2</h3>
+          <p>Another project description.</p>
+          <button>See More</button>
+        </div>
+        <div class="project-card">
+          <h3>Project 3</h3>
+          <p>Interesting project details.</p>
+          <button>See More</button>
+        </div>
+
+        <!--table-->
+        <section class="schedule">
+          <h2>My Table</h2>
+          <table>
+            <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+            <tr><td>Kazakh Language</td><td>Monday</td><td>16:00</td></tr>
+            <tr><td>Introduction to Finance</td><td>Tuesday</td><td>19:00</td></tr>
+          </table>
+        </section>
+      </section>
+
+      <!--About me-->
+      <aside class="portfolio-info">
+        <h3>About Me</h3>
+        <img src="photoaitu.jpg" alt="My photo" class="profile-photo">
+        <p>Student, 19 years old, live in Astana.</p>
+
+        <h4>My Hobbies</h4>
+        <ol>
+          <li>Hockey</li>
+          <li>Tennis</li>
+          <li>Workout</li>
+          <li>Running</li>
+        </ol>
+      </aside>
+    </main>
+
+    <!--Contact form-->
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="color">
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer class="portfolio-footer">Portfolio Footer © 2025</footer>
+  </div>
+
 </body>
 </html>
