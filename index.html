@@ -3,9 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <title>Zhamsat Almat Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Assignment 4: Task 0: Responsive Typography -->
+  <section class="typography-example">
+    <h1>Responsive Typography Example</h1>
+    <p>This paragraph text changes size for mobile, tablet, and desktop.</p>
+  </section>
+
+  <!-- Assignment 4: Task 1: Responsive Boxes Layout -->
+  <section class="responsive-boxes">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+
+  <!-- Assignment 4: Task 2: Bootstrap Grid -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Bootstrap Grid Example</h2>
+    <div class="row text-center">
+      <div class="col-12 col-md-6 col-lg-4 bg-light border p-3">Column 1</div>
+      <div class="col-12 col-md-6 col-lg-4 bg-light border p-3">Column 2</div>
+      <div class="col-12 col-md-6 col-lg-4 bg-light border p-3">Column 3</div>
+    </div>
+  </section>
+
+  <!-- Assignment 4: Task 3: Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Zhamsat Almat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!--Navigation flexbox-->
   <header class="main-header">
@@ -25,19 +72,19 @@
       <img src="photoaitutennis.jpg" alt="Tennis">
       <h3>Me</h3>
       <p>Me playing table-tennis in expo</p>
-      <button>Read More</button>
+      <button>Button</button>
     </div>
     <div class="card">
       <img src="photoaitulibrary.jpg" alt="library">
       <h3>Me and friends</h3>
       <p>Me with friends in library</p>
-      <button>Read More</button>
+      <button>Button</button>
     </div>
     <div class="card">
       <img src="photoaituwinter.jpg" alt="winter">
       <h3>Winter</h3>
       <p>It was really cold</p>
-      <button>Read More</button>
+      <button>Button</button>
     </div>
   </section>
 
@@ -57,12 +104,9 @@
     <img src="photoaitucanteen.jpg" alt="">
     <img src="photoaituos.jpg" alt="">
     <img src="photoaitulibrary3.jpg" alt="">
-    <img src="photoaitu" alt="">
-    <img src="photoaitu" alt="">
-    <img src="photoaitudormitory" alt="">
   </section>
 
-  <!--Portfolio page flexbox and grid-->
+  <!--Portfolio page-->
   <div class="portfolio">
     <header class="portfolio-header">
       <div class="logo">Portfolio</div>
@@ -80,21 +124,20 @@
       <section class="projects">
         <div class="project-card">
           <h3>Project 1</h3>
-          <p>Short description of project.</p>
-          <button>See More</button>
+          <p>My project</p>
+          <button>Button</button>
         </div>
         <div class="project-card">
           <h3>Project 2</h3>
-          <p>Another project description.</p>
-          <button>See More</button>
+          <p>My project</p>
+          <button>Button</button>
         </div>
         <div class="project-card">
           <h3>Project 3</h3>
-          <p>Interesting project details.</p>
-          <button>See More</button>
+          <p>My project</p>
+          <button>Button</button>
         </div>
 
-        <!--table-->
         <section class="schedule">
           <h2>My Table</h2>
           <table>
@@ -132,8 +175,9 @@
       </form>
     </section>
 
-    <footer class="portfolio-footer">Portfolio Footer © 2025</footer>
+    <footer class="portfolio-footer">© 2025 Zhamsat Almat</footer>
   </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
